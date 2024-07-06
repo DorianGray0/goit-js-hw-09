@@ -1,3 +1,7 @@
+import SimpleLightbox from 'simplelightbox';
+// import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -85,10 +89,6 @@ const markup = images
   .join('');
 
 gallery.insertAdjacentHTML('afterbegin', markup);
-
-import SimpleLightbox from 'simplelightbox';
-// import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
